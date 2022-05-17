@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginVertical="5dp"
+    android:layout_marginBottom="15dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/view_item_weather"
+        android:layout_width="192dp"
+        android:layout_height="235dp"
+        android:layout_marginEnd="200dp"
+        android:background="@drawable/bg_rectangle"
+        android:padding="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/libre_baskerville"
+            android:gravity="center"
+            android:text="08.00"
+            android:textColor="#14274E"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@+id/iv_cloudys"
+            tools:layout_editor_absoluteX="30dp" />
+
+        <TextView
+            android:id="@+id/tv_level"
+            android:layout_width="223dp"
+            android:layout_height="27dp"
+            android:layout_margin="7dp"
+            android:layout_marginTop="-30dp"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="@font/libre_baskerville"
+            android:gravity="center"
+            android:text="19°C"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_time"
+            app:layout_constraintTop_toBottomOf="@id/iv_cloudys"
+            tools:layout_editor_absoluteX="-32dp"
+            android:layout_marginHorizontal="10dp"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/iv_cloudys"
+            android:layout_width="192dp"
+            android:layout_height="171dp"
+            android:layout_margin="7dp"
+            android:background="@drawable/bg_sun_cloud"
+            tools:layout_editor_absoluteX="-27dp"
+            tools:layout_editor_absoluteY="-32dp"
+            tools:ignore="MissingConstraints" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
